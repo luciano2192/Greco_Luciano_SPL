@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1589213941 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\utn_funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"./utn_funciones.h"
+
+1589210701 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\utn_funciones.h
+
+1593381222 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Vuelo.h"
+
+1593436025 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.h
+
+1593440506 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.h
+
+1593437794 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1593447947 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Vuelo.h"
+	"Piloto.h"
+	"utn_funciones.h"
+
+1593447969 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller.h
+
+1593436011 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.h
+
+1593437699 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"parser.h"
+	"utn_funciones.h"
+	"Controller.h"
+	"Piloto.h"
+	"Vuelo.h"
+
+1593390358 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\parser.h
+
+1593450274 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Vuelo.h"
+	"Controller.h"
+	"utn_funciones.h"
+
+1593465778 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"utn_funciones.h"
+	"Controller.h"
+	"Piloto.h"
+	"parser.h"
+	"Vuelo.h"
+
