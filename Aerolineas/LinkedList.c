@@ -555,7 +555,8 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*)){
     return listaFiltrada;
 }
 
-LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(void*,char *dato) , char* cadena){
+
+LinkedList* ll_filter_parametro(LinkedList* this, char (*pFunc)(void*) , char* cadena){
 
     LinkedList* listaFiltrada;
     char dato[200];
@@ -564,7 +565,8 @@ LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(void*,char *dato)
         listaFiltrada = ll_newLinkedList();
         if( listaFiltrada != NULL ) {
             for( int i = 0 ; i < ll_len(this) ; i++ ) {
-                if( pFunc(ll_get(this, i) , dato) == 1 && stricmp(dato,cadena) == 0 ) {
+                strcpy(dato,pFunc(ll_get(this,i)));
+                if( stricmp(dato,cadena) == 0 ) {
                     ll_add( listaFiltrada , ll_get(this, i) );
                 }
             }
@@ -573,3 +575,4 @@ LinkedList* ll_filter_parametro(LinkedList* this, int (*pFunc)(void*,char *dato)
 
     return listaFiltrada;
 }
+

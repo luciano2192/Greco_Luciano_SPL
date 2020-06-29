@@ -20,3 +20,4 @@ Piloto* piloto_buscarPorID( LinkedList* pArrayList , int id );
 int piloto_filtrarPilotoAlexLifeson(void* element);
 int piloto_filtrarPilotoPorNombre(void* element,char* cadena);
 int piloto_listarPilotos(LinkedList* pArrayListPilotos);
+char* piloto_filtrarPiloto(void* element);

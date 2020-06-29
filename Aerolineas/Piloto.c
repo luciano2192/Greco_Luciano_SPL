@@ -166,6 +166,12 @@ int piloto_filtrarPilotoAlexLifeson(void* element) {
     return salida;
 }
 
+char* piloto_filtrarPiloto(void* element) {
+    Piloto* piloto = NULL;
+    piloto = (Piloto*)element;
+    return piloto->nombre;
+}
+
 int piloto_listarPilotos(LinkedList* pArrayListPilotos)
 {
     int salida = -1;
@@ -182,7 +188,7 @@ int piloto_listarPilotos(LinkedList* pArrayListPilotos)
                 piloto = (Piloto*)ll_get(pArrayListPilotos,i);
                 piloto_getIdPiloto(piloto,&idPiloto);
                 piloto_getNombre(piloto,nombrePiloto);
-                printf( "\n%6d %12d" , idPiloto
+                printf( "\n%6d %12s" , idPiloto
                                      , nombrePiloto);
                 printf( "\n\n");
                 system("pause");

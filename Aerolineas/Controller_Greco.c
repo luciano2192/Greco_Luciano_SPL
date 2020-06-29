@@ -3,7 +3,7 @@
 #include <string.h>
 #include "LinkedList.h"
 #include "utn_funciones.h"
-#include "Controller.h"
+#include "Controller_Greco.h"
 #include "Piloto.h"
 #include "parser.h"
 #include "Vuelo.h"
@@ -406,34 +406,21 @@ int Controller_Greco_ListVuelosFiltrandoPiloto(LinkedList* pArrayListVuelos,Link
     return salida;
 }
 
-int Controller_Greco_ListVuelosFiltrandoPiloto(LinkedList* pArrayListVuelos,LinkedList* pArrayListPilotos)
-{
-    int salida = -1;
-    LinkedList* listaVuelosFiltrada = NULL;
-
-    if( pArrayListVuelos != NULL && pArrayListPilotos != NULL ){
-        listaVuelosFiltrada = ll_filter(pArrayListVuelos,piloto_filtrarPilotoAlexLifeson);
-        if( listaVuelosFiltrada != NULL ) {
-            if( Controller_Greco_ListVuelos(listaVuelosFiltrada,pArrayListPilotos) == 0 ) {
-                salida = 0;
-            }
-        }
-    }
-    return salida;
-}
-
 
 int Controller_Greco_FiltrarPilotoPorNombre( LinkedList* pArrayListPilotos )
 {
     int salida = -1;
     char nombrePiloto[100];
+    LinkedList* listaFiltrada = NULL;
 
     if( pArrayListPilotos != NULL ){
         getDatoGenericoString( nombrePiloto , "Ingrese el nombre: " , "ERROR ! ingrese nuevamente el nombre" , 100 );
         formatearString(nombrePiloto);
         strtok( nombrePiloto , "\n" );
-        if( piloto_loadFromText("Pilotos.csv",pArrayListPilotos) == 1 ) {
-
+        listaFiltrada = ll_filter_parametro(pArrayListPilotos, piloto_filtrarPilotoAlexLifeson , nombrePiloto);
+        if( listaFiltrada != NULL ) {
+            piloto_listarPilotos(listaFiltrada);
+            salida = 0;
         }
     }
     return salida;

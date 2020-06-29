@@ -13,32 +13,32 @@ int main()
     LinkedList* listaPilotos = ll_newLinkedList();
 
     do{
-        opcion = menuPrincipal();
+        opcion = Controller_Greco_menuPrincipal();
         switch(opcion)
         {
             case 1:
-                controller_cargarArchivo( listaVuelos );
+                Controller_Greco_cargarArchivo( listaVuelos );
                 break;
             case 2:
-                controller_ListVuelos( listaVuelos , listaPilotos );
+                Controller_Greco_ListVuelos( listaVuelos , listaPilotos );
                 break;
             case 3:
-                controller_cantPasajeros( listaVuelos );
+                Controller_Greco_cantPasajeros( listaVuelos );
                 break;
             case 4:
-                controller_cantPasajerosADestinoX( listaVuelos );
+                Controller_Greco_cantPasajerosADestinoX( listaVuelos );
                 break;
             case 5:
-                controller_cargarVuelosCortos( listaVuelos );
+                Controller_Greco_cargarVuelosCortos( listaVuelos );
                 break;
             case 6:
-                controller_ListVuelosDestinoX( listaVuelos , listaPilotos );
+                Controller_Greco_ListVuelosDestinoX( listaVuelos , listaPilotos );
                 break;
             case 7:
-                controller_ListVuelosFiltrandoPiloto( listaVuelos , listaPilotos );
+                Controller_Greco_ListVuelosFiltrandoPiloto( listaVuelos , listaPilotos );
                 break;
             case 8:
-
+                Controller_Greco_FiltrarPilotoPorNombre( listaPilotos );
                 break;
             case 9:
                 break;

@@ -14,50 +14,50 @@
 	"LinkedList.h"
 	"Vuelo.h"
 
-1593436025 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.h
+1593472421 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.h
 
 1593440506 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.h
 
-1593437794 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.c
+1593472242 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"LinkedList.h"
 
-1593447947 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\main.c
+1593471946 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
-	"Controller.h"
+	"Controller_Greco.h"
 	"Vuelo.h"
 	"Piloto.h"
 	"utn_funciones.h"
 
 1593447969 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller.h
 
-1593436011 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.h
+1593472599 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.h
 
-1593437699 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.c
+1593471538 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"LinkedList.h"
 	"parser.h"
 	"utn_funciones.h"
-	"Controller.h"
+	"Controller_Greco.h"
 	"Piloto.h"
 	"Vuelo.h"
 
 1593390358 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\parser.h
 
-1593450274 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.c
+1593467781 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"LinkedList.h"
 	"Vuelo.h"
-	"Controller.h"
+	"Controller_Greco.h"
 	"utn_funciones.h"
 
 1593465778 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller.c
@@ -67,6 +67,19 @@
 	"LinkedList.h"
 	"utn_funciones.h"
 	"Controller.h"
+	"Piloto.h"
+	"parser.h"
+	"Vuelo.h"
+
+1593469396 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller_greco.h
+
+1593472492 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller_greco.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"utn_funciones.h"
+	"Controller_Greco.h"
 	"Piloto.h"
 	"parser.h"
 	"Vuelo.h"
