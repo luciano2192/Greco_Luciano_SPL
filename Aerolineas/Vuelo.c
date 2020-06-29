@@ -273,52 +273,7 @@ int vuelo_getHoraLlegada(Vuelo* this,int* horaLlegada)
 	}
 	return salida;
 }
-/*
-int employee_CompareByName(Employee* e1, Employee* e2)
-{
-    int salida = -1;
-    if( e1 != NULL && e2 != NULL ) {
-        strcmp(e1->nombre, e2->nombre);
-        salida = 0;
-    }
-    return salida;
-}
-int employee_CompareById(Employee* e1, Employee* e2)
-{
-    if( e1 != NULL && e2 != NULL ) {
-        if(e1->id > e2->id)
-        {
-            return 1;
-        }
-        else
-        {
-            if(e1->id < e2->id)
-            {
-                return -1;
-            }
-            else
-            {
-                return 0;
-            }
-        }
-        return strcmp(e1->nombre, e2->nombre);
-    }
-}
 
-
-int vuelo_validarDestino( char* destino , int len ) {
-    int salida = -1;
-    if( destino != NULL && len > 0 ) {
-        for( int i = 0 ; i < len ; i++ ) {
-            if( isalpha(destino[i]) || isspace(destino[i]) ) {
-                salida = 0;
-            }
-        }
-    }
-    return salida;
-}
-
-*/
 
 int vuelo_buscarVueloPorID( LinkedList* pArrayList , int id ) {
     int indice = -1;

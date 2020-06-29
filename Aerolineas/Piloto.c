@@ -100,7 +100,7 @@ int parser_PilotoFromText(FILE* pFile, LinkedList* pArrayList)
             if( feof(pFile) ) {
                 break;
             }
-            cantidadDatos = fscanf( pFile , "%[^,],%[^\n]\n" , a , b );
+            cantidadDatos = fscanf( pFile , "%[^,],%[^\n]" , a , b );
             if( cantidadDatos == 2 ) {
                 nuevoPiloto = piloto_newParametros( a , b );
                 if( nuevoPiloto != NULL ) {
@@ -181,34 +181,18 @@ int piloto_listarPilotos(LinkedList* pArrayListPilotos)
     Piloto* piloto = NULL;
 
     if( pArrayListPilotos != NULL ){
-        if( piloto_loadFromText("Pilotos.csv",pArrayListPilotos) == 1 ) {
             listaPilotos = ll_len(pArrayListPilotos);
             piloto_columnasListaPilotos();
             for( int i = 0 ; i < listaPilotos ; i++ ) {
                 piloto = (Piloto*)ll_get(pArrayListPilotos,i);
                 piloto_getIdPiloto(piloto,&idPiloto);
                 piloto_getNombre(piloto,nombrePiloto);
-                printf( "\n%6d %12s" , idPiloto
+                printf( "\n%4d %18s" , idPiloto
                                      , nombrePiloto);
-                printf( "\n\n");
-                system("pause");
             }
+            printf("\n\n");
             salida = 0;
-        }
     }
     return salida;
 }
 
-/*
-int piloto_filtrarPilotoPorNombre(void* element,char* cadena) {
-    int salida = -1;
-    Piloto* piloto = NULL;
-    char nombrePiloto[100];
-    if( element != NULL ) {
-        piloto = (Vuelo*)element;
-        piloto_getNombre(piloto,nombrePiloto);
-        strcpy(cadena,nombrePiloto);
-    }
-    return salida;
-}
-*/

@@ -37,7 +37,7 @@
 
 1593472599 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.h
 
-1593471538 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.c
+1593474171 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\piloto.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -50,7 +50,7 @@
 
 1593390358 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\parser.h
 
-1593467781 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.c
+1593473648 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\vuelo.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -73,7 +73,7 @@
 
 1593469396 c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller_greco.h
 
-1593472492 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller_greco.c
+1593474392 source:c:\users\lucho\documents\utn\sparciallaboratorio\aerolineas\controller_greco.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

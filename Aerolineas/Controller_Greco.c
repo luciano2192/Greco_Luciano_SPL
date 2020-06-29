@@ -411,17 +411,23 @@ int Controller_Greco_FiltrarPilotoPorNombre( LinkedList* pArrayListPilotos )
 {
     int salida = -1;
     char nombrePiloto[100];
+    char auxNombre[100];
     LinkedList* listaFiltrada = NULL;
+    Piloto* piloto = NULL;
 
     if( pArrayListPilotos != NULL ){
         getDatoGenericoString( nombrePiloto , "Ingrese el nombre: " , "ERROR ! ingrese nuevamente el nombre" , 100 );
-        formatearString(nombrePiloto);
         strtok( nombrePiloto , "\n" );
-        listaFiltrada = ll_filter_parametro(pArrayListPilotos, piloto_filtrarPilotoAlexLifeson , nombrePiloto);
-        if( listaFiltrada != NULL ) {
-            piloto_listarPilotos(listaFiltrada);
-            salida = 0;
+        piloto_loadFromText("Pilotos.csv", pArrayListPilotos);
+        listaFiltrada = ll_newLinkedList();
+        for( int i = 0 ; i < ll_len(pArrayListPilotos) ; i++ ) {
+            piloto = (Piloto*)ll_get(pArrayListPilotos,i);
+            piloto_getNombre(piloto,auxNombre);
+            if( stricmp(auxNombre,nombrePiloto) == 0) {
+                ll_add( listaFiltrada , piloto );
+            }
         }
+        piloto_listarPilotos(listaFiltrada);
     }
     return salida;
 }
