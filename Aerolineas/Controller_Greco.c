@@ -425,9 +425,11 @@ int Controller_Greco_FiltrarPilotoPorNombre( LinkedList* pArrayListPilotos )
             piloto_getNombre(piloto,auxNombre);
             if( stricmp(auxNombre,nombrePiloto) == 0) {
                 ll_add( listaFiltrada , piloto );
+                salida = 0;
             }
         }
         piloto_listarPilotos(listaFiltrada);
+        system("pause");
     }
     return salida;
 }
